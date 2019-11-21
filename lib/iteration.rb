@@ -25,7 +25,10 @@ def find_greater_pair(src)
 
   i = 0
   while i < src.length do
-    new_array << src[i][1] > src[i][0] ? src[i][1] : src[i][0]
+    if src[i][1] > src[i][0] 
+      new_array << src[i][1] 
+    else 
+      new_array << src[i][0]
     i += 1
   end
 
@@ -45,7 +48,6 @@ def total_even_pairs(src)
   while i < src.length do
     if (src[i][1] % 2 == 0) && (src[i][0] % 2 == 0)
       total += (src[i][1] + src[i][0])
-    end
     i += 1
   end
 
