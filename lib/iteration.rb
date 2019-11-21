@@ -40,7 +40,16 @@ def find_greater_pair(src)
   # that are in the inner Arrays
 
 def total_even_pairs(src)
+  total = 0
+  i = 0
+  while i < src.length do
+    if (src[i][1] % 2 == 0) && (src[i][0] % 2 == 0)
+      total += (src[i][1] + src[i][0])
+    end
+    i += 1
+  end
 
+  total
   
   
   
