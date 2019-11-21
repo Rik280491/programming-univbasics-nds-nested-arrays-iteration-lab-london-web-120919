@@ -1,14 +1,14 @@
 def join_ingredients(src)
-  result = []
+  new_array = []
 
   i = 0
   while i < src.length do
-    inner = src[i]
-    result << "I love #{inner[0]} and #{inner[1]} on my pizza"
+    inner_array = src[i]
+    result << "I love #{inner_array[0]} and #{inner_array[1]} on my pizza"
     i += 1
   end
 
-  result
+  new_array
     
   
   
